@@ -1,10 +1,17 @@
 import express from 'express'
+import dotenv from 'dotenv'
+
+dotenv.config({ path: './.env' })
+
 const PORT = process.env.PORT || 3000;
 const app = express();
+
+
 
 app.get('/', (req, res)=> {
     res.send(`<a href=http://localhost:${PORT}/api/links> api </a>`)
 })
+
 app.get('/api/links', (req, res)=> {
     const links = [
         {
