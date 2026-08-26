@@ -53,17 +53,17 @@ function App() {
       <h1 className='text-white mt-2 font-semibold '>@junaid_malik0011</h1>
       <h2 className='text-white/60 mt-1'>Building things | Learinig | Exploring</h2>
       <div className='mt-4 flex gap-3 w-full'>
-        {/* <a href="" className='px-4 py-2 flex font-medium bg-gray-900 rounded-lg text-white justify-center items-center gap-1'>
+        {/* <a href="https://www.instagram.com/junaid_malik0011/" className='px-4 py-2 flex font-medium bg-gray-900 rounded-lg text-white justify-center items-center gap-1'>
           <img src="/instagram.png" alt="Instagram" className='h-5 w-5 bg-white rounded-full object-cover p-[1px]' />
           Insta
         </a> */}
-        <a href="" className='px-4 py-2 flex flex-1 font-medium bg-gray-900 rounded-lg text-white justify-center items-center gap-1 '>
+        <a href="https://github.com/Malik-0011" className='px-4 py-2 flex flex-1 font-medium bg-gray-900 rounded-lg text-white justify-center items-center gap-1 '>
           <img src="/github.png" alt="Github" className='h-5 w-5 bg-white rounded-full p-[1px]' />
           Github
         </a>
         <a href="" className='px-4 py-2 flex flex-1 font-medium bg-gray-900 rounded-lg text-white justify-center items-center gap-1 '>
           <Info className='h-5 w-5' />
-          About
+          About Me
         </a>
       </div>
       <div className='w-full mt-2'>
