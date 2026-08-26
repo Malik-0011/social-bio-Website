@@ -1,12 +1,12 @@
-import express from 'express'
-import dotenv from 'dotenv'
+import connectDB from './db/db.js';
+import 'dotenv/config'
+import express from 'express';
 
-dotenv.config({ path: './.env' })
 
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-
+connectDB()
 
 app.get('/', (req, res)=> {
     res.send(`<a href=http://localhost:${PORT}/api/links> api </a>`)
