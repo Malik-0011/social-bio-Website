@@ -1,4 +1,5 @@
 import axios from 'axios'
+import 'animate.css';
 import { useEffect } from 'react'
 import { useState } from 'react'
 import Card from '../public/components/Card'
@@ -43,16 +44,16 @@ function App() {
   }, [])
 
   return (
-    <div className='bg-black min-h-screen flex flex-col items-center p-10'>
-      <div className=''>
+    <div className='bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 min-h-screen flex flex-col items-center p-10 '>
+      <div className='animate__animated animate__fadeIn'>
         <img
           src="/profile.jpg" alt=""
           className='w-50 h-50 rounded-full object-cover'
         />
       </div>
-      <h1 className='text-white mt-2 font-semibold '>@junaid_malik0011</h1>
-      <h2 className='text-white/60 mt-1'>Building things | Learinig | Exploring</h2>
-      <div className='mt-4 flex gap-3 w-full'>
+      <h1 className='text-white mt-2 font-semibold animate__animated animate__fadeIn'>@junaid_malik0011</h1>
+      <h2 className='text-white/60 mt-1 animate__animated animate__fadeIn'>Building things | Learinig | Exploring</h2>
+      <div className='mt-4 flex gap-3 w-full animate__animated animate__fadeIn'>
         {/* <a href="https://www.instagram.com/junaid_malik0011/" className='px-4 py-2 flex font-medium bg-gray-900 rounded-lg text-white justify-center items-center gap-1'>
           <img src="/instagram.png" alt="Instagram" className='h-5 w-5 bg-white rounded-full object-cover p-[1px]' />
           Insta
@@ -75,9 +76,9 @@ function App() {
         </a>
       </div>
 
-      <h2 className='text-white mt-10'>--Recommendations--</h2>
+      <h2 className='text-white mt-10 animate__animated animate__fadeIn'>--Recommendations--</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full mx-auto mt-3 cursor-pointer">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full mx-auto mt-3 cursor-pointer animate__animated animate__slideInUp">
         {
           cardData.map((item, index) => (
             <a href={item.link} key={index}>
